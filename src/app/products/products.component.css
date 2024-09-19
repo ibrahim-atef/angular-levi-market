@@ -1,0 +1,38 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.product-grid .col {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Ensure all items have the same height */
+}
+
+.btns {
+  display: flex; /* Show buttons by default */
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btns button {
+  padding: 12px 25px;
+  border: 2px solid #38a169;
+  color: #38a169;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 10px;
+}
+
+.btns button:hover {
+  background-color: #38a169;
+  color: #fff;
+}

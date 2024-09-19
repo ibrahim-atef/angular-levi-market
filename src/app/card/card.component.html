@@ -1,0 +1,42 @@
+<div class="product-card">
+  <div class="image-container">
+    <img
+      [src]="product.images[0]"
+      (click)="redirectToDetails(product.id)"
+      class="product-image"
+      alt="Product image"
+    />
+  </div>
+  <div class="details">
+    <span
+      class="stock-badge"
+      [ngClass]="product.stock > 0 ? 'in-stock' : 'out-of-stock'"
+    >
+      {{ product.stock > 0 ? "In Stock" : "Out of Stock" }}
+    </span>
+    <h4 class="product-title">{{ product.title }}</h4>
+    <p class="price">{{ product.price | currency }}</p>
+    <div class="rating-container">
+      <div
+        *ngFor="let star of stars"
+        class="rating-star"
+        [ngClass]="{
+          filled: star <= rating,
+          empty: star > rating
+        }"
+      ></div>
+    </div>
+    <div class="action-buttons">
+      <button
+        class="action-btn"
+        (click)="addToCart(product.id)"
+        [disabled]="amount === product.stock"
+      >
+        Add to Cart
+      </button>
+      <button class="details-btn" (click)="redirectToDetails(product.id)">
+        View Details
+      </button>
+    </div>
+  </div>
+</div>

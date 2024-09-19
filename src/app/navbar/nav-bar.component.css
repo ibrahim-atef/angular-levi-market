@@ -1,0 +1,77 @@
+.custom-navbar {
+  background-color: #1a202c;
+  color: #edf2f7;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-link {
+  color: #e2e8f0 !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f6ad55 !important;
+  border-bottom: 2px solid #f6ad55;
+}
+
+.navbar-toggler {
+  border: 2px solid #f6ad55;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.navbar-toggler:hover {
+  border-color: #ed8936;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12.5a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm0-4a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm0-4a.5.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11z"/></svg>');
+}
+
+.cart-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem 1rem;
+  color: #f6ad55;
+}
+
+.cart-link:hover .cart-badge {
+  background-color: #ed8936;
+}
+
+.cart-icon {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-right: 8px;
+}
+
+.cart-text {
+  font-size: 1rem;
+  margin-right: 8px;
+}
+
+.cart-badge {
+  background-color: #f6ad55;
+  color: #fff;
+  font-size: 0.8rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.active {
+  color: #f6ad55 !important;
+  font-weight: bold;
+  border-bottom: 2px solid #f6ad55;
+}

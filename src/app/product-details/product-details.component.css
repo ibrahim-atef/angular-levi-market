@@ -1,0 +1,123 @@
+body {
+  text-transform: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.card {
+  width: 85%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.card-body h5 {
+  color: #38a169;
+  margin: 15px 0;
+  font-size: 1.5rem;
+}
+
+.rating-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.star {
+  color: #c0c0c0;
+  font-size: 22px;
+}
+
+.star-filled {
+  color: #38a169;
+}
+
+.star-empty {
+  color: #c0c0c0;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.price-info {
+  margin: 15px 0;
+  padding: 15px;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.more-info span {
+  font-weight: 600;
+  color: #38a169;
+}
+
+.btns button {
+  padding: 12px 25px;
+  margin-top: 15px;
+  border: 1px solid #38a169;
+  color: #38a169;
+  background-color: transparent;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+.btns button:hover {
+  background-color: #38a169;
+  color: #fff;
+  transform: scale(0.98);
+}
+
+.stock {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.stock + p {
+  margin-top: 0 !important;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.stock span {
+  color: #38a169;
+}
+
+.add-to-cart button {
+  background-color: #c4c4c4;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart button:hover {
+  background-color: #38a169;
+  color: #fff;
+}
+
+span {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}

@@ -1,0 +1,129 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.image-container {
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.details {
+  padding: 20px;
+  text-align: left;
+}
+
+.stock-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.in-stock {
+  background-color: #28a745;
+}
+
+.out-of-stock {
+  background-color: #dc3545;
+}
+
+.product-title {
+  margin: 8px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.price {
+  margin: 4px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.rating-container {
+  display: flex;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.rating-star {
+  width: 18px;
+  height: 18px;
+  background-color: #f1f1f1;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.filled {
+  background-color: #ffc107;
+}
+
+.empty {
+  background-color: #d3d3d3;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.action-btn,
+.details-btn {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.action-btn {
+  background-color: #007bff;
+}
+
+.details-btn {
+  background-color: #17a2b8;
+}
+
+.action-btn:hover {
+  background-color: #0056b3;
+}
+
+.details-btn:hover {
+  background-color: #138496;
+}

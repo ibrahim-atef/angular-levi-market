@@ -1,0 +1,44 @@
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-4 col-lg-6">
+      <img [src]="productsDetail.thumbnail" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8 col-lg-6" >
+      <div class="card-body">
+        <h5 class="card-title">{{productsDetail.title}}</h5>
+        <p class="card-text">{{productsDetail.description}}</p>
+        <div class="rating-box">
+          @for (star of stars; track $index) {
+          <fa-icon [icon]="faStar" class="star" [ngClass]="{
+            'star-filled': star < rating,
+            'star-empty': star >= rating
+          }"></fa-icon>
+          }
+        </div>
+        <div class="price-info">
+          <p class="card-text price">${{productsDetail.price}} </p>
+          <p class="card-text">{{productsDetail.shippingInformation}} </p>
+        </div>
+        <div>
+          <h6> more information</h6>
+          <p class="more-info"><span> brand  </span>: {{productsDetail.brand}} </p>
+          <p class="more-info"><span> category </span> : {{productsDetail.category}} </p>
+        </div>
+        <div>
+          <div class="add-to-cart">
+            <button (click)="increAmount()" [disabled]="amount === productsDetail.stock ">+</button>
+            
+            <span>{{amount}}</span>
+            <button (click)="decreAmount()" [disabled]="amount==0">-</button>
+          </div>
+          <p class="stock"> only <span>{{productsDetail.stock}} left</span> </p>
+          <p> don't miss it</p>
+        </div>
+        <div class="btns">
+          <button > buy now </button>
+          <button (click)="addToCart(productsDetail.id)" [disabled]="amount === productsDetail.stock || amount ==0 "> add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
